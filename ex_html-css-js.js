@@ -1,16 +1,21 @@
 //Escribe aquí tu código JavaScript
 //Modo claro-oscuro
+let pie=document.getElementById("pie");
 let formulario=document.getElementById("pedidoForm");
 let modo="claro";
 function cambiarModo(){
     if (modo=="claro"){
         modo="oscuro";
-        document.body.style.backgroundColor="black";                
+        document.body.style.backgroundColor="black";
+        formulario.style.color="black";    
+        pie.style.color="white";            
         document.getElementById("cambioModo").innerText="Modo Claro";
     } else {
         modo="claro";
         document.body.style.backgroundColor="white";                
         document.body.style.color="black";
+        formulario.style.color="white";    
+        pie.style.color="black";  
         document.getElementById("cambioModo").innerText="Modo Oscuro";
     }
 }
