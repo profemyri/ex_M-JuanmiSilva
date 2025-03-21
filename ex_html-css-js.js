@@ -22,12 +22,12 @@ document.getElementById("instrucciones").oninput = function(){
    //Boton enviar cambia al pasar el raton
 let botonEnviar=document.getElementById("botonEnviar");
 botonEnviar.addEventListener("mouseover", function(){
-    botonEnviar.style.backgroundColor = "#0080ff";
-    botonEnviar.style.color = "white";
+    botonEnviar.style.backgroundColor = "white";
+    botonEnviar.style.color = "blue";
 });
 botonEnviar.addEventListener("mouseout", function(){
-    botonEnviar.style.backgroundColor = "";
-    botonEnviar.style.color = "";
+    botonEnviar.style.backgroundColor = "blue";
+    botonEnviar.style.color = "white";
 });
 //mensaje de error
 document.getElementById("pedidoForm").addEventListener("submit", function(event) {
