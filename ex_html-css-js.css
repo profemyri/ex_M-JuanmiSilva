@@ -37,6 +37,7 @@ input, select, textarea{
 
 textarea::placeholder {
    color: #f4a261;
+   width: 100%;
 }
 
 * {
