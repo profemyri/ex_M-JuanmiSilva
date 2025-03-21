@@ -1,5 +1,6 @@
 //Escribe aquí tu código JavaScript
 //Modo claro-oscuro
+let formulario=document.getElementById("pedidoForm");
 let modo="claro";
 function cambiarModo(){
     if (modo=="claro"){
@@ -15,10 +16,6 @@ function cambiarModo(){
     }
 }
 
-document.getElementById(cambioModo).onclick = function(){
-    document.body.classList.toggle("oscuro");
-
-}
 //Contar caracteres
 document.getElementById("instrucciones").oninput = function(){
     document.getElementById("contador").textContent = this.value.length;
