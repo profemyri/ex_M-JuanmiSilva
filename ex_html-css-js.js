@@ -14,6 +14,11 @@ function cambiarModo(){
         document.getElementById("cambioModo").innerText="Modo Oscuro";
     }
 }
+
+document.getElementById(cambioModo).onclick = function(){
+    document.body.classList.toggle("oscuro");
+
+}
 //Contar caracteres
 document.getElementById("instrucciones").oninput = function(){
     document.getElementById("contador").textContent = this.value.length;
