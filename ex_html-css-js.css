@@ -23,6 +23,7 @@ img {
 
 form {
    background-color: #ffffff;
+   width:100%;
 }
 
 input, select, textarea{
