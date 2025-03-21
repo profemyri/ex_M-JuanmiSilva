@@ -6,7 +6,6 @@ function cambiarModo(){
     if (modo=="claro"){
         modo="oscuro";
         document.body.style.backgroundColor="black";                
-        document.body.style.color="white";
         document.getElementById("cambioModo").innerText="Modo Claro";
     } else {
         modo="claro";
