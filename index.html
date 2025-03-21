@@ -1,14 +1,92 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-   ..........
-    <link rel="stylesheet" href="ex_html-css-js.css">
+    <title>Freiduría online</title>
+    <link rel="stylesheet" href="Examen.css">
 </head>
 <body>
-   ..........
+    <h1>¡¡Pide aquí tu rico pescaíto!!</h1>
+    <img src="pescado_frito.jpg" alt="Pescaito Frito">
+    <form id="pedidoForm">
+        <label for="nombre">Nombre:</label>
+        <br>
+        <input type="text" id="nombre">
+        <br>
 
-    <script src="ex_html-css-js.js"></script>
+        <label for="apellidos">Apellidos:</label>
+        <br>
+        <input type="text" id="apellidos">
+        <br>
 
+        <label for="direccion">Dirección:</label>
+        <br>
+        <input type="text" id="direccion" minlength="18">
+        <br>
+
+        <label for="telefono">Teléfono:</label>
+        <br>
+        <input type="text" id="telefono" minlength="9" maxlength="9">
+        <br>
+
+        <label for="email">Correo electrónico:</label>
+        <br>
+        <input type="text" id="email">
+        <br>
+
+        <label for="hora">Hora aproximada de entrega:</label>
+        <input type="time" id="hora">
+        <br>
+
+        <label for="pescado">Tipo de pescado:</label>
+        <br>
+        <select id="pescado">
+            <option value="calamares">Calamares</option>
+            <option value="adobo">Adobo</option>
+            <option value="boquerones">Boquerones</option>
+        </select>
+        <br>
+
+        <label for="raciones">Nº de raciones:</label>
+        <br>
+        <select id="raciones">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br>
+
+        <label>Acompañamiento:</label>
+        <br>
+        <input type="checkbox" class="acompañamiento" value="4"> Patatas Fritas(4€)
+        <br>
+        <input type="checkbox" class="acompañamiento" value="4"> Ensaladilla (4€)
+        <br>
+        <input type="checkbox" class="acompañamiento" value="4"> Botella de manzanilla (4€)
+        <br>
+
+        <label for="pago">Metodo de pago:</label>
+        <br>
+        <select id="pago">
+            <option value="efectivo">Efectivo</option>
+            <option value="tarjeta">Tarjeta</option>
+            <option value="paypal">PayPal</option>
+        </select>
+        <br>
+        <label for="instrucciones">Instrucciones adicionales:</label>
+        <br>
+        <textarea id="instrucciones" maxlength="150" placeholder="Escribe tus comentarios aquí"></textarea>
+        <p>Caracteres escritos: <span id="contador">0</span>/150</p>
+
+        <p><strong>Total: <span id="total">0€</span></strong></p>
+
+        <p id="mensajeError" style="color: red;"></p>
+        <button type="submit" id="botonEnviar">Enviar pedido</button>
+        <button type="button" id="cambioModo" onclick="cambiarModo()">Modo Oscuro</button>
+    </form>
+    <script src="Examen.js"></script>
+    <footer>Creado por: Juan Miguel Silva Martin</footer>
 </body>
 </html>
